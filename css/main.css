@@ -113,7 +113,7 @@ a {
 
 p {
     font-size: 1em;
-    line-height: 1.4em;
+    line-height: 1.4;
 }
 
 img {
@@ -125,18 +125,16 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: 900;
-    font-family: 'nunito sans', sans-serif;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 1.625em;
-    line-height: 1.25;
-    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 1.6;
 }
 
 h2 {
-    font-size: 1.125em;
+    font-size: 1em;
 }
 
 figure {
@@ -151,18 +149,23 @@ figure {
     text-transform: uppercase;
     line-height: 2.5;
     text-align: center;
-    box-shadow: 2px 2px 0 #e6e6e6;
+    box-shadow: 2px 2px 0 #bbb;
     width: 100%;
     height: 2.5em;
     display: block;
 }
 
-.sidebar-newsletter .btn {
+input.btn {
     background-color: #ff1256;
     box-shadow: 2px 2px 0 #d19aaa;
 }
 
+.last-item {
+    border-bottom: none !important;
+}
+
 /* HEADER  ========================================== */
+
 .main-header {
     width: 100%;
     margin: auto;
@@ -184,7 +187,7 @@ nav ul {
 }
 
 nav ul li {
-    border-bottom: 1px solid #cfcacb;
+    border-bottom: 1px solid #ccc;
     text-align: center;
     padding: 15px 0;
 }
@@ -208,7 +211,7 @@ main {
 
 .top-story {
     width: 100%;
-    border-bottom: 1px solid #cfcacb;
+    border-bottom: 1px solid #ccc;
 }
 
 .top-img {
@@ -223,8 +226,8 @@ main {
 }
 
 .sidebar-newsletter {
-    border-bottom: 1px solid #cfcacb;
-    padding: 0 5px 20px 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px 20px 10px;
 }
 
 .sidebar-newsletter input {
@@ -256,29 +259,21 @@ main {
 
 .feed-item {
     clear: both;
-    border-bottom: 1px solid #cfcacb;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 15px;
 }
 
 .feed-type {
     text-transform: uppercase;
     font-size: .8em;
-    font-weight: 800;
 }
 
 .feed-item h2 {
     margin: 0;
-    font-weight: 700;
-    line-height: 1.25;
 }
 
 .feed-item h2 a {
     color: #222;
-}
-
-.feed-item h3 {
-    font-weight: 800;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .feed-img {
@@ -295,13 +290,33 @@ main {
     padding-top: 30px;
 }
 
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* FAQ PAGE  ======================================== */
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-item h3 {
+    font-weight: 400;
+}
+
 /* FOOTER  ========================================== */
 
 footer {
     width: 100%;
     margin: auto;
     clear: both;
-    border-top: 1px solid #cfcacb;
+    border-top: 1px solid #ccc;
     padding-top: 20px;
     margin-top: 20px;
 }
@@ -420,7 +435,7 @@ footer {
     .main-header .main-wrapper {
         width: 94%;
         max-width: 960px;
-        margin: 0 auto
+        margin: 0 auto;
     }
 
     .logo {
@@ -433,10 +448,25 @@ footer {
         float: left;
     }
 
+    nav ul {
+        margin: 0;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0 2%;
+        border: none;
+        position: relative;
+    }
+
     /* TOP NEWS ITEM ===================== */
 
     .top-story {
         width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }  
 
     .top-img {
@@ -460,18 +490,30 @@ footer {
 
     .sidebar-about-us,
     .sidebar-faq {
+        padding: 0 10px 20px 10px;
         display: block;
+        border-bottom: 1px solid #ccc;
     }
+
 
     /* NEWS FEED SECTION ================== */
 
     .feed {
         width: 60%;
         float: left;
+        border-right: 1px solid #ccc;
+    }
+
+    .feed h2 {
+        font-size: 1.125em;
     }
 
     .feed-img {
         width: 35%;
+    }
+
+    .feed-item {
+        padding-right: 20px;
     }
 
     .feed-info {
@@ -497,15 +539,32 @@ footer {
 @media only screen and (min-width: 940px) {
     /* DESKTOP GO HAW ============================== */
 
+    h1 {
+        font-size: 2em;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
     /* MAIN NEWS CONTENT ================== */
 
     .top-story {
         width: 65%;
         float: left;
+        border: none;
+        padding-right: 2%;
     }
 
     .top-img {
         width: 100%;
+        padding-bottom: 1em;
+    }
+
+    .top-info {
+        width: 100%;
+        float: none;
     }
 
     /* SIDEBAR ============================ */
@@ -514,6 +573,17 @@ footer {
         clear: none;
         width: 30%;
         float: right;
+        border-left: 1px solid #ccc;
+    }
+
+    .sidebar-newsletter,
+    .sidebar-about-us,
+    .sidebar-faq {
+        padding: 0 20px 20px 20px;
+    }
+
+    .sidebar-faq {
+        border: none;
     }
 
     /* NEWS AND FEED  ===================== */
@@ -522,11 +592,18 @@ footer {
         width: 100%;
         float: none;
         clear: both;
+        padding-top: 20px;
+        border-top: 1px solid #ccc;
+        border-right: none;
     }
 
     .feed p {
         display: block;
         margin-top: 0;
+    }
+
+    .feed h2 {
+        margin: 0;
     }
 
     .feed-img {
