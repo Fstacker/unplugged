@@ -97,12 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-main {
-    width: 96%;
-    padding: 0 2%;
-    margin: auto;
-    clear: both;
-}
 
 /* HEADER  ========================================== */
 .main-header {
@@ -119,6 +113,7 @@ main {
     width: 96%;
     padding: 0 2%;
     margin: auto;
+    clear: both;
 }
 
 /* FEATURED NEWS ITEMS  ============================= */
@@ -131,6 +126,11 @@ main {
 
 .sidebar {
     width: 100%;
+}
+
+.sidebar-about-us,
+.sidebar-faq {
+
 }
 
 /* NEWS FEED  ======================================= */
@@ -297,6 +297,7 @@ footer {
 
     .top-info {
         width: 40%;
+        float: left;
     }
 
     /* SIDEBAR =========================== */
