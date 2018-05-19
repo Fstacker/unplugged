@@ -347,6 +347,47 @@ footer {
 @media only screen and (min-width: 940px) {
     /* DESKTOP GO HAW ============================== */
 
+    /* MAIN NEWS CONTENT ================== */
+
+    .top-story {
+        width: 65%;
+        float: left;
+    }
+
+    .top-img {
+        width: 100%;
+    }
+
+    /* SIDEBAR ============================ */
+    
+    .sidebar {
+        clear: none;
+        width: 30%;
+        float: right;
+    }
+
+    /* NEWS AND FEED  ===================== */
+    
+    .feed {
+        width: 100%;
+        float: none;
+        clear: both;
+    }
+
+    .feed p {
+        display: block;
+        margin-top: 0;
+    }
+
+    .feed-img {
+        width: 20%;
+    }
+
+    /* FOOTER ============================= */
+    
+    .footer-logo {
+        width: 20%;
+    }
 }
 
 
