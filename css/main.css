@@ -97,14 +97,102 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body,
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
+}
+
+a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    font-family: 'nunito sans', sans-serif;
+}
+
+h1 {
+    font-size: 1.625em;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.125em;
+}
+
+figure {
+    margin: 0;
+}
+
+.btn {
+    color: #fff;
+    background-color: #b21e49;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0 #e6e6e6;
+    width: 100%;
+    height: 2.5em;
+    display: block;
+}
+
+.sidebar-newsletter .btn {
+    background-color: #ff1256;
+    box-shadow: 2px 2px 0 #d19aaa;
+}
 
 /* HEADER  ========================================== */
 .main-header {
     width: 100%;
+    margin: auto;
+    background-color: #eee;
+}
+
+.logo {
+    width: 100%;
+    margin: 0 auto;
 }
 
 nav {
     width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #cfcacb;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul li a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: #222;
 }
 
 /* MAIN CONTENT  ==================================== */
@@ -120,6 +208,12 @@ main {
 
 .top-story {
     width: 100%;
+    border-bottom: 1px solid #cfcacb;
+}
+
+.top-img {
+    width: 100%;
+    margin: 0;
 }
 
 /* SIDEBAR  ========================================= */
@@ -128,9 +222,26 @@ main {
     width: 100%;
 }
 
+.sidebar-newsletter {
+    border-bottom: 1px solid #cfcacb;
+    padding: 0 5px 20px 5px;
+}
+
+.sidebar-newsletter input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar-newsletter input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border: 2px solid #e6e6e6;
+    line-height: 1.6125;
+}
+
 .sidebar-about-us,
 .sidebar-faq {
-
+    display: none;
 }
 
 /* NEWS FEED  ======================================= */
@@ -139,14 +250,49 @@ main {
     width: 100%;
 }
 
+.feed p {
+    display: none;
+}
+
+.feed-item {
+    clear: both;
+    border-bottom: 1px solid #cfcacb;
+    padding-bottom: 15px;
+}
+
+.feed-type {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 800;
+}
+
+.feed-item h2 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.feed-item h2 a {
+    color: #222;
+}
+
+.feed-item h3 {
+    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .feed-img {
     width: 45%;
+    float: left;
+    margin: 0;
+    padding-right: 3%;
 }
 
 /* ABOUT PAGE  ====================================== */
 
 .contact-info {
     width: 100%;
+    padding-top: 30px;
 }
 
 /* FOOTER  ========================================== */
@@ -154,6 +300,10 @@ main {
 footer {
     width: 100%;
     margin: auto;
+    clear: both;
+    border-top: 1px solid #cfcacb;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .footer-logo {
