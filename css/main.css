@@ -257,9 +257,99 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+    /* TABLETS GO HAW ============================== */
+
+    /* HEADER =========================== */
+    .main-header {
+        width: 100%;
+        margin: auto;
+        padding: 0 3%;
+    }
+
+    .main-header .main-wrapper {
+        width: 94%;
+        max-width: 960px;
+        margin: 0 auto
+    }
+
+    .logo {
+        width: 40%;
+        float: left;
+    }
+
+    nav {
+        width: 60%;
+        float: left;
+    }
+
+    /* TOP NEWS ITEM ===================== */
+
+    .top-story {
+        width: 100%;
+    }  
+
+    .top-img {
+        width: 57%;
+        float: left;
+        padding-right: 3%;
+    }
+
+    .top-info {
+        width: 40%;
+    }
+
+    /* SIDEBAR =========================== */
+
+    .sidebar {
+        clear: both;
+        width: 37%;
+        float: right;
+    }
+
+    .sidebar-about-us,
+    .sidebar-faq {
+        display: block;
+    }
+
+    /* NEWS FEED SECTION ================== */
+
+    .feed {
+        width: 60%;
+        float: left;
+    }
+
+    .feed-img {
+        width: 35%;
+    }
+
+    .feed-info {
+        width: 57%;
+    }
+
+    /* ABOUT PAGE ========================= */
+
+    .contact-info {
+        width: 40%;
+        float: left;
+    }
+
+    /* FOOTER ============================= */
+
+    .footer-logo {
+        width: 30%;
+        margin: auto;
+    }
 }
+
+
+@media only screen and (min-width: 940px) {
+    /* DESKTOP GO HAW ============================== */
+
+}
+
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
