@@ -301,7 +301,8 @@ main {
 
 .contact-info {
     width: 100%;
-    padding-top: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 .contact-info ul {
@@ -320,6 +321,12 @@ main {
 
 .mission {
     width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.team h1 {
+    margin-bottom: 0;
 }
 
 .team-member {
@@ -331,6 +338,10 @@ main {
     margin: 0;
 }
 
+.team-name h2 {
+    font-size: 1.25em;
+
+}
 .team-title {
     margin: 0;
 }
@@ -343,22 +354,23 @@ main {
     border: 1px solid #ccc;
 }
 
+
 .team-description {
     display: none;
 }
 
-.team-img-jack {
+#team-img-jack {
     background: url("../img/team-jack-smith.jpg") center no-repeat;
     background-size: cover;
 }
 
-.team-img-lana {
-    background: url("../img/team-img-lana") center no-repeat;
+#team-img-lana {
+    background: url("../img/team-lana-walter.jpg") center no-repeat;
     background-size: cover;
 }
 
-.team-img-willow {
-    background: url("../img/team-img-willow") center no-repeat;
+#team-img-willow {
+    background: url("../img/team-willow-white.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -370,6 +382,10 @@ main {
 
 .faq-item h3 {
     font-weight: 400;
+}
+
+.faq-item .last-item {
+    border-bottom: none;
 }
 
 /* FOOTER  ========================================== */
@@ -626,17 +642,17 @@ footer {
     }
 
     #team-img-jack {
-        background-image: url("../img/team-jack-smith.jpg") center no-repeat;
+        background: url("../img/team-jack-smith.jpg") center no-repeat;
         background-size: cover;
     }
 
     #team-img-lana {
-        background-image: url("../img/team-lana-walter.jpg") center no-repeat;
+        background: url("../img/team-lana-walter.jpg") center no-repeat;
         background-size: cover;
     }
 
     #team-img-willow {
-        background-image: url("../img/team-willow-white.jpg") center no-repeat;
+        background: url("../img/team-willow-white.jpg") center no-repeat;
         background-size: cover;
     }
 
