@@ -105,6 +105,8 @@ html {
     background-color: #eee;
 }
 
+
+
 a {
     font-weight: 700;
     color: #23a4cc;
@@ -169,12 +171,17 @@ input.btn {
 .main-header {
     width: 100%;
     margin: auto;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .logo {
     width: 100%;
     margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    margin: auto;
 }
 
 nav {
@@ -184,12 +191,13 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
     border-bottom: 1px solid #ccc;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 nav ul li a {
@@ -205,6 +213,7 @@ main {
     padding: 0 2%;
     margin: auto;
     clear: both;
+    max-width: 960px;
 }
 
 /* FEATURED NEWS ITEMS  ============================= */
@@ -217,6 +226,11 @@ main {
 .top-img {
     width: 100%;
     margin: 0;
+}
+
+.top-img img {
+    width: 100%;
+    padding-top: 10px;
 }
 
 /* SIDEBAR  ========================================= */
@@ -287,7 +301,7 @@ main {
 
 .contact-info {
     width: 100%;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .contact-info ul {
@@ -298,6 +312,54 @@ main {
 .contact-info ul li {
     display: inline-block;
     vertical-align: top;
+}
+
+.strong {
+    font-weight: 700;
+}
+
+.mission {
+    width: 100%;
+}
+
+.team-member {
+    padding: 15px 0;
+    clear: both;
+}
+
+.team-name {
+    margin: 0;
+}
+
+.team-title {
+    margin: 0;
+}
+
+.team-img {
+    width: 40%;
+    padding-bottom: 40%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+}
+
+.team-description {
+    display: none;
+}
+
+.team-img-jack {
+    background: url("../img/team-jack-smith.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.team-img-lana {
+    background: url("../img/team-img-lana") center no-repeat;
+    background-size: cover;
+}
+
+.team-img-willow {
+    background: url("../img/team-img-willow") center no-repeat;
+    background-size: cover;
 }
 
 /* FAQ PAGE  ======================================== */
@@ -429,7 +491,8 @@ footer {
     .main-header {
         width: 100%;
         margin: auto;
-        padding: 0 3%;
+        padding: 0 2%;
+        background-color: #ddd;
     }
 
     .main-header .main-wrapper {
@@ -441,6 +504,10 @@ footer {
     .logo {
         width: 40%;
         float: left;
+    }
+
+    .logo img {
+        max-width: 312px;
     }
 
     nav {
@@ -466,13 +533,22 @@ footer {
     .top-story {
         width: 100%;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }  
 
+    .top-story h1 {
+        margin: 0;
+        line-height: 1.2;
+    }
+
     .top-img {
-        width: 57%;
+        width: 59%;
         float: left;
-        padding-right: 3%;
+        padding-right: 4%;
+    }
+
+    .top-img img {
+        padding-top: 0;
     }
 
     .top-info {
@@ -527,6 +603,43 @@ footer {
         float: left;
     }
 
+    .mission {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 0;
+        clear: both;
+    }
+
+    .mission h1 {
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .mission p {
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    .team-img {
+        width: 40%;
+        padding-bottom: 40%;
+    }
+
+    #team-img-jack {
+        background-image: url("../img/team-jack-smith.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+    #team-img-lana {
+        background-image: url("../img/team-lana-walter.jpg") center no-repeat;
+        background-size: cover;
+    }
+
+    #team-img-willow {
+        background-image: url("../img/team-willow-white.jpg") center no-repeat;
+        background-size: cover;
+    }
+
     /* FOOTER ============================= */
 
     .footer-logo {
@@ -548,10 +661,12 @@ footer {
         font-size: 1.4em;
     }
 
+
+
     /* MAIN NEWS CONTENT ================== */
 
     .top-story {
-        width: 65%;
+        width: 67.5%;
         float: left;
         border: none;
         padding-right: 2%;
@@ -559,7 +674,11 @@ footer {
 
     .top-img {
         width: 100%;
-        padding-bottom: 1em;
+        padding-bottom: 30px;
+    }
+
+    .top-img img {
+        max-width: 620px;
     }
 
     .top-info {
@@ -574,6 +693,7 @@ footer {
         width: 30%;
         float: right;
         border-left: 1px solid #ccc;
+        padding-top: 15px;
     }
 
     .sidebar-newsletter,
@@ -608,6 +728,21 @@ footer {
 
     .feed-img {
         width: 20%;
+    }
+
+    /* ABOUT PAGE ========================= */
+    
+    .contact-info {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .mission {
+        padding-bottom: 25px;
+    }
+
+    .team-description {
+        display: block;
     }
 
     /* FOOTER ============================= */
