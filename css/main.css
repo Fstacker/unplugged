@@ -319,6 +319,21 @@ main {
     font-weight: 700;
 }
 
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .mission {
     width: 100%;
     padding-bottom: 15px;
@@ -503,6 +518,9 @@ footer {
 @media only screen and (min-width: 768px) {
     /* TABLETS GO HAW ============================== */
 
+    main {
+        margin: none;
+    }
     /* HEADER =========================== */
     .main-header {
         width: 100%;
@@ -617,12 +635,33 @@ footer {
     .contact-info {
         width: 40%;
         float: left;
+        border-bottom: none;
+    }
+
+    .map-container {
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+        width: 56%;
+        float: left;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .mission {
         border-top: 1px solid #ccc;
         border-bottom: 1px solid #ccc;
-        padding: 0;
+        padding-bottom: 10;
         clear: both;
     }
 
