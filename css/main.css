@@ -200,6 +200,10 @@ nav ul li {
     padding: 20px 0;
 }
 
+nav i {
+    padding-right: 10px;
+}
+
 nav ul li a {
     font-size: 1.125em;
     text-transform: uppercase;
@@ -525,7 +529,6 @@ footer {
     .main-header {
         width: 100%;
         margin: auto;
-        padding: 0 2%;
         background-color: #ddd;
     }
 
@@ -545,7 +548,7 @@ footer {
     }
 
     nav {
-        width: 60%;
+        width: 57%;
         float: left;
     }
 
@@ -605,6 +608,10 @@ footer {
         border-bottom: 1px solid #ccc;
     }
 
+    .sidebar-about-us i,
+    .sidebar-faq i {
+        padding-right: 10px;
+    }
 
     /* NEWS FEED SECTION ================== */
 
@@ -695,6 +702,16 @@ footer {
         background-size: cover;
     }
 
+    /* FAQ ================================ */
+
+    nav.faq-header {
+        background-color: #ddd;
+    }
+
+    h1.faq-header {
+        padding-top: 20px;
+    }
+
     /* FOOTER ============================= */
 
     .footer-logo {
@@ -716,8 +733,9 @@ footer {
         font-size: 1.4em;
     }
 
-
-
+    .logo {
+        padding-left: 2%;
+    }
     /* MAIN NEWS CONTENT ================== */
 
     .top-story {
